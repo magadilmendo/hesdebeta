@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Accordion with Anchor Links</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<nav>
+			<div class="brand">
+				<div class="logo">
+					<img src="heslogo.svg" alt="HES" style="height: 40px" />
+				</div>
+				<div class="logotext">HESDE
+          <div class="beta">beta</div>
+        </div>
+			</div>
+			<input type="checkbox" id="bar-checkbox" />
+			<div class="bar-icon">
+				<label for="bar-checkbox"></label>
+        <div class="list-icon"><i class="ri-menu-3-fill"></i></div>
+        <div class="x-icon"><i class="ri-close-fill"></i></div>
+			</div>
+			<ul class="navmenu">
+				<li>
+					<a href="#"><hr>Kisi-Kisi<i class="ri-arrow-right-up-line ri-xl"></i></a>
+				</li>
+				<li>
+					<a href="#"><hr>About<i class="ri-arrow-right-up-line ri-xl"><hr></i></a>
+				</li>
+			</ul>
+		</nav>
+		<div class="hero">
+			<div class="macos">
+				<div class="mac1"></div>
+				<div class="mac2"></div>
+				<div class="mac3"></div>
+			</div>
+			<div class="p2">
+				temukan semua istilah hukum<br />
+				<span id="anim"></span>
+			</div>
+			<div class="getstarted">
+				jelajahi
+				<a href="#a-z" id="arow"><i class="ri-arrow-right-down-line"></i></a>
+			</div>
+		</div>
+
+    </div>
+    <div class="navigation">
+		<div class="searchbox">
+			<input type="search" placeholder="ketikan sesuatu..." class="searchinput">
+			<button class="searchbutton">
+				<i class="ri-search-line ri-fw"></i>
+			</button>
+		</div>
+		<!-- <div class="closeicon"><i class="ri-close-fill"></i></div> -->
+			<div id="a-z" class="az">A Z</div>
+			<div id="azbox" class="hidden">
+				<div class="alphabet-list" id="alphabet-list"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="accordion-container" id="accordion-container"></div>
+		</div>
+		<button onclick="topFunction()" id="backtop" class="backtop">
+			<i class="ri-arrow-up-line"></i>
+		</button>
+		<script src="script.js"></script>
+	</body>
+</html>
